@@ -22,11 +22,9 @@ function question(age1, age2) {
     let result;
     if(age1 == age2){
         result = "너 내 동료가 돼라!"
-    } else if(age1 != age2){
-        result = "너 내 도도도도독..."
     } else {
-        console.log("나이는 1 이상 100 이하로만 작성 가능합니다.")
-    }
+        result = "너 내 도도도도독..."
+    } 
     return result;
 }
 
