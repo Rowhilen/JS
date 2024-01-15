@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스테리 숫자 맞추기</title>
+</head>
+<body>
+    <h1>숫자 맞추기</h1>
+    <p>범위: 1~100</p>
+    <input type="number" id="inputNum" placeholder="숫자를 입력하시오">
+    <button onclick="check()">확인</button>
+    <p id="hint"></p>
+    <script>
+        let secretNum = Math.floor(Math.random() * 100) + 1;
+        
+        function check(){
+            let inputNum = document.getElementById('inputNum').value;
+
+            if(inputNum < secretNum){
+                document.getElementById('hint').textContent = "너무 작음";
+            } else if(inputNum > secretNum) {
+                document.getElementById('hint').textContent = "너무 큼";
+            } else {
+                document.getElementById('hint').textContent = "정답!";
+            }
+        }
+    </script>
+</body>
+</html>

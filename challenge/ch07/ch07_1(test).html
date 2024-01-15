@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학점</title>
+</head>
+<body>
+    <h1>학점 판독기</h1>
+    <div id="container"></div>
+    
+    <script>
+        let answer = parseInt(prompt("중간고사 점수 입력"))
+
+        if(answer >= 90 && answer <= 100){
+            document.write(`${answer}으로 A등급입니다!`)
+        } else if(answer >= 80 && answer < 90){
+            document.write(`${answer}으로 B등급입니다!`)
+        } else if(answer >= 70 && answer < 80){
+            document.write(`${answer}으로 C등급입니다!`)
+        } else if(answer >= 60 && answer < 70){
+            document.write(`${answer}으로 D등급입니다!`)
+        } else if(answer >= 0 && answer < 60){
+            document.write(`${answer}으로 F등급입니다!`)
+        } else{
+            document.write("잘못된 입력입니다.")
+        }
+    </script>
+
+</body>
+</html>
